@@ -1,6 +1,15 @@
 # Easing
 
-TODO: Write a gem description
+A port of known [Robert Penner's easing
+functions](http://www.robertpenner.com/easing/) for Ruby, implemented both in
+pure-Ruby and with FFI.
+
+Check out [easings.net](http://easings.net/) to help you easily visualize each
+of the easing functions.
+
+## Usage
+
+TODO: Write usage instructions here
 
 ## Installation
 
@@ -15,10 +24,6 @@ And then execute:
 Or install it yourself as:
 
     $ gem install easing
-
-## Usage
-
-TODO: Write usage instructions here
 
 ## Contributing
 
