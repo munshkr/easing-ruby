@@ -9,7 +9,17 @@ of the easing functions.
 
 ## Usage
 
-TODO: Write usage instructions here
+All functions are defined in the Easing module, and the same 4 parameters:
+
+  * `t`: current time
+  * `b`: beginning or start value
+  * `c`: change in value (or *destination* - `b`)
+  * `d`: duration
+
+```ruby
+(0..10).map { |t| Easing.ease_in_out_expo(t, 0, 10, 10) }
+# => [0.0, 0.01953125, 0.078125, 0.3125, 1.2500000000000002, 5.0, 8.75, 9.6875, 9.921875, 9.98046875, 10.0]
+```
 
 ## Installation
 
