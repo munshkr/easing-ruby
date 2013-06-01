@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>easing by munshkr</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>easing</h1>
+        <p>A Ruby implementation of the well-known Robert Penner's easing functions</p>
+
+        <p class="view"><a href="https://github.com/munshkr/easing-ruby">View the Project on GitHub <small>munshkr/easing-ruby</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/munshkr/easing-ruby/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/munshkr/easing-ruby/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/munshkr/easing-ruby">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="easing" class="anchor" href="#easing"><span class="octicon octicon-link"></span></a>easing</h1>
+
+<p>A port of known <a href="http://www.robertpenner.com/easing/">Robert Penner's easing
+functions</a> for Ruby, implemented both in
+pure-Ruby and with FFI.</p>
+
+<p>Check out <a href="http://easings.net/">easings.net</a> to help you easily visualize each
+of the easing functions.</p>
+
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
+
+<p>All functions are defined in the <code>Easing</code> module, and they always receive the same 4 parameters:</p>
+
+<ul>
+<li>
+<code>t</code>: current time</li>
+<li>
+<code>b</code>: beginning or start value</li>
+<li>
+<code>c</code>: change in value (or <em>destination</em> - <code>b</code>)</li>
+<li>
+<code>d</code>: duration</li>
+</ul><div class="highlight"><pre><span class="p">(</span><span class="mi">0</span><span class="o">.</span><span class="n">.</span><span class="mi">10</span><span class="p">)</span><span class="o">.</span><span class="n">map</span> <span class="p">{</span> <span class="o">|</span><span class="n">t</span><span class="o">|</span> <span class="no">Easing</span><span class="o">.</span><span class="n">ease_in_out_expo</span><span class="p">(</span><span class="n">t</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">)</span> <span class="p">}</span>
+<span class="c1"># =&gt; [0.0, 0.01953125, 0.078125, 0.3125, 1.2500000000000002, 5.0, 8.75, 9.6875, 9.921875, 9.98046875, 10.0]</span>
+</pre></div>
+
+<h2>
+<a name="installation" class="anchor" href="#installation"><span class="octicon octicon-link"></span></a>Installation</h2>
+
+<p>Add this line to your application's Gemfile:</p>
+
+<pre><code>gem 'easing'
+</code></pre>
+
+<p>And then execute:</p>
+
+<pre><code>$ bundle
+</code></pre>
+
+<p>Or install it yourself as:</p>
+
+<pre><code>$ gem install easing
+</code></pre>
+
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
+
+<ol>
+<li>Fork it</li>
+<li>Create your feature branch (<code>git checkout -b my-new-feature</code>)</li>
+<li>Commit your changes (<code>git commit -am 'Add some feature'</code>)</li>
+<li>Push to the branch (<code>git push origin my-new-feature</code>)</li>
+<li>Create new Pull Request</li>
+</ol>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/munshkr">munshkr</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
