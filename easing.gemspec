@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ['Damián Silvani']
   spec.email         = ['munshkr@gmail.com']
   spec.description   = %q{Collection of common easing functions for Ruby}
-  spec.summary       = %q{A port of known Robert Penner's easing functions for Ruby}
+  spec.summary       = %q{A Ruby implementation of the well-known Robert Penner's easing functions}
   spec.homepage      = 'http://munshkr.github.io/easing-ruby'
   spec.license       = 'MIT'
 
